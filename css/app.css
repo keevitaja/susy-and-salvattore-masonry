@@ -16,6 +16,21 @@ body {
   display: block;
   clear: both;
 }
+/* line 13, ../sass/app.scss */
+.container[data-columns]::before {
+  content: "1 .column";
+}
+/* line 17, ../sass/app.scss */
+.container .column {
+  width: 100%;
+  float: left;
+}
+/* line 66, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.container .column:nth-child(1n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: none;
+}
 @media (min-width: 640px) {
   /* line 13, ../sass/app.scss */
   .container[data-columns]::before {
@@ -106,20 +121,20 @@ body {
     clear: none;
   }
 }
-/* line 39, ../sass/app.scss */
+/* line 41, ../sass/app.scss */
 .container .item {
   background-color: red;
   margin-bottom: 2em;
 }
-/* line 43, ../sass/app.scss */
+/* line 45, ../sass/app.scss */
 .container .item.a {
   height: 200px;
 }
-/* line 47, ../sass/app.scss */
+/* line 49, ../sass/app.scss */
 .container .item.b {
   height: 150px;
 }
-/* line 51, ../sass/app.scss */
+/* line 53, ../sass/app.scss */
 .container .item.c {
   height: 100px;
 }

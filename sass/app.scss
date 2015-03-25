@@ -24,6 +24,8 @@ body {
 
     background-color: green;
 
+    @include columns(1);
+
     @include susy-media(640px) {
         @include columns(2);
     }
