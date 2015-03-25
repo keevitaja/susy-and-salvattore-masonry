@@ -1,0 +1,125 @@
+/* line 8, ../sass/app.scss */
+body {
+  margin: 0;
+}
+
+/* line 22, ../sass/app.scss */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: green;
+}
+/* line 12, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 640px) {
+  /* line 13, ../sass/app.scss */
+  .container[data-columns]::before {
+    content: "2 .column";
+  }
+  /* line 17, ../sass/app.scss */
+  .container .column {
+    width: 48.57143%;
+    float: left;
+  }
+  /* line 66, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .container .column:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .container .column:nth-child(2n + 2) {
+    margin-left: 51.42857%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  /* line 13, ../sass/app.scss */
+  .container[data-columns]::before {
+    content: "3 .column";
+  }
+  /* line 17, ../sass/app.scss */
+  .container .column {
+    width: 31.42857%;
+    float: left;
+  }
+  /* line 66, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .container .column:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .container .column:nth-child(3n + 2) {
+    margin-left: 34.28571%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .container .column:nth-child(3n + 3) {
+    margin-left: 68.57143%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 13, ../sass/app.scss */
+  .container[data-columns]::before {
+    content: "4 .column";
+  }
+  /* line 17, ../sass/app.scss */
+  .container .column {
+    width: 22.85714%;
+    float: left;
+  }
+  /* line 66, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .container .column:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .container .column:nth-child(4n + 2) {
+    margin-left: 25.71429%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .container .column:nth-child(4n + 3) {
+    margin-left: 51.42857%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .container .column:nth-child(4n + 4) {
+    margin-left: 77.14286%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/* line 39, ../sass/app.scss */
+.container .item {
+  background-color: red;
+  margin-bottom: 2em;
+}
+/* line 43, ../sass/app.scss */
+.container .item.a {
+  height: 200px;
+}
+/* line 47, ../sass/app.scss */
+.container .item.b {
+  height: 150px;
+}
+/* line 51, ../sass/app.scss */
+.container .item.c {
+  height: 100px;
+}

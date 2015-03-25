@@ -1,0 +1,18 @@
+{
+  "name": "Susy + Salvattore",
+  "version": "1",
+  "authors": [
+    "Tanel Tammik <keevitaja@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "salvattore": "~1.0.7"
+  }
+}

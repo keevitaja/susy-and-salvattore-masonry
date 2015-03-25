@@ -1,0 +1,55 @@
+$susy: (
+    columns: 12,
+    gutters: 1/2
+);
+
+@import 'susy';
+
+body {
+    margin: 0;
+}
+
+@mixin columns($count) {
+    &[data-columns]::before {
+        content: '#{$count} .column';
+    }
+
+    .column { 
+        @include gallery(12/$count);
+    }
+}
+
+.container {
+    @include container(1200px);
+
+    background-color: green;
+
+    @include susy-media(640px) {
+        @include columns(2);
+    }
+
+    @include susy-media(960px) {
+        @include columns(3);
+    }
+
+    @include susy-media(1200px) {
+        @include columns(4);
+    }
+
+    .item {
+        background-color: red;
+        margin-bottom: 2em;
+
+        &.a {
+            height: 200px;
+        }
+
+        &.b {
+            height: 150px;
+        }
+
+        &.c {
+            height: 100px;
+        }
+    }
+}
